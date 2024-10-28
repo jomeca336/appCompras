@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "871889789879",
+    "project_id": "appcompras-9b509",
+    "storage_bucket": "appcompras-9b509.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871889789879:android:1ca047e438299cf6583e32",
+        "android_client_info": {
+          "package_name": "com.camilo.appcompras"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP8ldd-RTavmSHSivSbXiIbZJWYWIM1DU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

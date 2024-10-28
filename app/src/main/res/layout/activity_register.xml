@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/back_arrow"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo2"
+                android:layout_marginEnd="30dp"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="Bienvenido a la app de Compras!"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+
+
+            <EditText
+                android:id="@+id/emailRegisterEditText"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:hint="Email"
+                android:background="@drawable/edit_text_background_selector"
+                android:layout_margin="15dp"
+                android:padding="15dp"
+                android:inputType="textEmailAddress"
+                />
+
+            <EditText
+                android:id="@+id/passwordRegisterEditText"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:hint="Contraseña"
+                android:background="@drawable/edit_text_background_selector"
+                android:layout_margin="15dp"
+                android:padding="15dp"
+                android:inputType="textPassword"
+                />
+            <EditText
+                android:id="@+id/confirmPasswordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:hint="Confirmar contraseña"
+                android:background="@drawable/edit_text_background_selector"
+                android:layout_margin="15dp"
+                android:padding="15dp"
+                android:inputType="textPassword"
+                />
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#8F3438"
+                android:text="Registrarse"
+                android:textSize="20dp"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

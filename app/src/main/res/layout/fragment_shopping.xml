@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/shoppingLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lista de cosas compradas"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total: "
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textColor="#09940F"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/totalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textColor="#09940F"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Eliminar estos productos"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#218BBB"
+            />
+
+
+        <TextView
+            android:id="@+id/noItemsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No hay articulos comprados"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/shoppingRecyclerView"
+            tools:listitem="@layout/item"
+            tools:itemCount="4"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

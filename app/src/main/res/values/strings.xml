@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">appCompras</string>
+
+    <string-array name="opciones_spinner">
+        <item>Selecciona una opción</item>
+        <item>Alimentos</item>
+        <item>Bebidas</item>
+        <item>Limpieza</item>
+        <item>Higiene personal</item>
+        <item>Mascotas</item>
+        <item>Otros</item>
+    </string-array>
+</resources>

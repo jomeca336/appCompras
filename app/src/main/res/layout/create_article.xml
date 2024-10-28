@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText for Article Name -->
+    <EditText
+        android:id="@+id/editTextArticleName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del articulo"
+        android:background="@drawable/edit_text_background_selector"
+        android:inputType="text"
+        android:padding="10dp"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_background_selector"
+        />
+
+    <EditText
+        android:id="@+id/editTextArticlePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio del articulo"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_text_background_selector"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cantidad: "
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/quantityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="22sp"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        >
+
+
+        <Button
+            android:id="@+id/decreaseButton"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:text="-"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:backgroundTint="#CA3535"
+            />
+
+        <Button
+            android:id="@+id/increaseButton"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:text="+"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:backgroundTint="#2D954A"
+            />
+    </LinearLayout>
+
+</LinearLayout>
